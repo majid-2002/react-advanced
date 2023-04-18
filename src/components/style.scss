@@ -1,0 +1,81 @@
+//Import google fonts kariana
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Kanit", sans-serif;
+
+  .header-meme {
+    width: 100vw;
+    height: 100px;
+    background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+
+    img {
+      width: 80px;
+      margin-left: 20px;
+      margin-top: 10px;
+      float: left;
+    }
+
+    h2 {
+      color: white;
+      font-size: 30px;
+      display: inline;
+      float: left;
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+
+    p {
+      color: white;
+      font-size: 20px;
+      display: inline;
+      float: right;
+      margin-top: 40px;
+      margin-right: 50px;
+    }
+  }
+
+  .main-meme {
+    padding: 2em 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .meme-form {
+      width: 100%;
+      padding: 2em 5em;
+      input {
+        width: 49%;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 0 10px;
+        outline: none;
+        font-size: 20px;
+        &:first-child {
+          margin-right: 2%;
+        }
+      }
+      button {
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 1.5rem;
+        margin-top: 20px;
+        cursor: pointer;
+        background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+      }
+    }
+  }
+}

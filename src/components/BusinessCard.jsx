@@ -3,7 +3,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import IconButton from "@mui/material/IconButton";
 import { FaTwitter, FaFacebook, FaInstagram, FaGithub } from 'react-icons/fa';
-
+import "../App.css"
 
 export default function BusinnessCard() {
   return (

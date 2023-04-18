@@ -1,10 +1,9 @@
-import "./App.css";
-import BusinnessCard from "./components/BusinessCard";
+import MemeGenerator from "./components/MemeGenerator";
 
 function App() {
   return (
     <div className="App">
-      <BusinnessCard />
+      <MemeGenerator />
     </div>
   );
 }
