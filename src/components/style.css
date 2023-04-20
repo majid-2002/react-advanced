@@ -7,36 +7,26 @@
 
 body {
   background-color: white;
-  width: 100vw;
-  height: 100vh;
   font-family: "Kanit", sans-serif;
 }
 body .header-meme {
-  width: 100vw;
-  height: 100px;
   background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  display: flex;
+  align-items: center;
+  padding: 1em;
 }
 body .header-meme img {
   width: 80px;
-  margin-left: 20px;
-  margin-top: 10px;
-  float: left;
 }
 body .header-meme h2 {
   color: white;
   font-size: 30px;
-  display: inline;
-  float: left;
-  margin-top: 30px;
-  margin-left: 20px;
+  margin-left: 0.5em;
 }
 body .header-meme p {
   color: white;
   font-size: 20px;
-  display: inline;
-  float: right;
-  margin-top: 40px;
-  margin-right: 50px;
+  margin-left: auto;
 }
 body .main-meme {
   padding: 2em 5em;
@@ -46,20 +36,34 @@ body .main-meme {
 }
 body .main-meme .meme-form {
   width: 100%;
+  max-width: 60vw;
+  min-width: 600px;
   padding: 2em 5em;
 }
-body .main-meme .meme-form input {
-  width: 49%;
+body .main-meme .meme-form .row {
+  display: flex;
+  flex-direction: row;
+}
+body .main-meme .meme-form .row input {
+  width: 100%;
   height: 50px;
   border: none;
   border-radius: 5px;
   border: 1px solid #ccc;
+  outline: 2px solid transparent;
   padding: 0 10px;
-  outline: none;
   font-size: 20px;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-body .main-meme .meme-form input:first-child {
+body .main-meme .meme-form .row input:first-child {
   margin-right: 2%;
+}
+body .main-meme .meme-form .row input:focus {
+  border: solid 3px transparent;
+  background-image: linear-gradient(white, white), linear-gradient(to right, #672280, #a626d3);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 body .main-meme .meme-form button {
   width: 100%;

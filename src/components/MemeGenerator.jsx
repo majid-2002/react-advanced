@@ -14,8 +14,10 @@ function MemeGenerator() {
       </header>
       <main className="main-meme">
         <form className="meme-form">
-          <input type="text" name="topText" placeholder="Top Text" />
-          <input type="text" name="bottomText" placeholder="Bottom Text" />
+          <div className="row">
+            <input type="text" name="topText" placeholder="Top Text" />
+            <input type="text" name="bottomText" placeholder="Bottom Text" />
+          </div>
           <button>Get a new Image</button>
         </form>
       </main>

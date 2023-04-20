@@ -5,7 +5,7 @@ import IconButton from "@mui/material/IconButton";
 import { FaTwitter, FaFacebook, FaInstagram, FaGithub } from 'react-icons/fa';
 import "../App.css"
 
-export default function BusinnessCard() {
+export default function BusinessCard() {
   return (
     <div className="container">
       <img src={personimg} alt="a girl pic"></img>
